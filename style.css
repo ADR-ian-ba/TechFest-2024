@@ -15,14 +15,16 @@ nav{
     justify-content: space-around;
     /* padding: 20px 0; */
     /* background-color: black; */
-    height: 70px;
-    align-items: center;   
+    height: 100px;
+    align-items: center; 
+    /* position: fixed;
+    z-index: 10;   */
 }
 
 .logo img{
     width: 75%;
     height: auto;
-    
+
 }
 
 nav ul {
@@ -35,11 +37,11 @@ nav ul {
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #B4275B;
 }
 
 
@@ -122,6 +124,7 @@ nav ul li a:hover {
         /* background-color: black; */
         z-index: -1;
         transform: translateX(100%);
+        /* right: -100%; */
         opacity: 0;
     }
 
