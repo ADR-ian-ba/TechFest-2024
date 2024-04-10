@@ -3,14 +3,19 @@
     padding: 0;
 }
 
+
 body {
     font-family: hiragino-kaku-gothic-pron, sans-serif;
     /* background-image: url('Assets/'); */
     background-color: #0B1E49;
-    overflow-x: hidden;
+    min-height: 120vh;
+    width: 100vw;
+    overflow-x: hidden !important;
+
 }
 
 nav{
+
     display: flex;
     justify-content: space-around;
     /* padding: 20px 0; */
@@ -45,7 +50,7 @@ nav ul li a:hover {
 }
 
 
-/* hamburger */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -74,7 +79,7 @@ nav ul li a:hover {
     transition: all 0.5s;
 }
 
-/* hamburger menu animation */
+
 .menu-toggle span:nth-child(2){
     transform-origin: 0 0;
 }
@@ -98,7 +103,6 @@ nav ul li a:hover {
     transform: scale(0)
 }
 
-/* responsive */
 /* ukuran ipad */
 @media screen and (max-width: 768px) {
     nav ul {
@@ -114,22 +118,22 @@ nav ul li a:hover {
     nav ul {
         position: absolute;
         right: 0;
-        top: 0;
-        height: 100vh;
+        top: 100px; 
+        height: 100vh; 
         width: 80%;
-        /* spaace evenly atas dan bawah sama */
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        /* background-color: black; */
         z-index: -1;
         transform: translateX(100%);
-        /* right: -100%; */
         opacity: 0;
+        transition: transform 0.3s, opacity 0.3s; 
     }
 
+
     nav ul.slide {
-        opacity: 1;
-        transform: translateX(0);
+        opacity: 1; 
+        transform: translateX(0); 
+        visibility: visible; 
     }
 }
