@@ -137,7 +137,3 @@ nav ul li a:hover {
         visibility: visible; 
     }
 }
-
-nav ul:not(.slide) {
-    visibility: hidden; 
-}
