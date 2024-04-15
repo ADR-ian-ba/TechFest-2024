@@ -6,8 +6,7 @@
 
 body {
   font-family: hiragino-kaku-gothic-pron, sans-serif;
-  /* background-image: url('Assets/'); */
-  background-color: #3E4146;
+  background-image: url('Assets/Background.png');
   min-height: 120vh;
   width: 100vw;
   overflow-x: hidden !important;
@@ -16,7 +15,6 @@ body {
 
 nav {
 display: flex;
-background-color: #0B1E49;
 justify-content: space-between;
 width: 100%;
 /* padding: 20px 0; */
@@ -33,7 +31,7 @@ padding-left: 5rem;
 }
 
 .logo img{
-width: 75%;
+width: 25%;
 height: auto;
 
 }
@@ -44,6 +42,7 @@ display: flex;
 list-style: none;
 width: 40%;
 justify-content: space-between;
+gap: 3rem;
 padding-right: 5rem;
 }
 
@@ -55,7 +54,7 @@ font-weight: bold;
 }
 
 nav ul li a:hover {
-color:  #B4275B;
+color:  #E784BA;
 }
 
 /* hamburger menu */
@@ -158,11 +157,8 @@ transform: rotate(-45deg) translate(-1px, 0);
   }
 
   nav .logo {
+    width: 500px;
     padding-top: 0.8rem;
     padding-left: 3.5rem;
-  }
-
-  .logo-himti {
-    width: 50px;
   }
 }
