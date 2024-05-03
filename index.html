@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techtalk - TECHFEST 2024</title>
+    <title>TECHFEST 2024</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://kit.fontawesome.com/8be52d934d.js" ></script>
 </head>
 <body>
-    <nav>
+
+    <!-- NAVBAR -->
+    <section id="header">
+        <a href=""><img src="Assets/LOGO-FIXERV1.png" alt="Logo Himti"></a>
+
         <div>
-            <img src="Assets/LOGO-FIXERV1.png" alt="logo-techfest" />
+            <ul id="navbar">
+                <li><a href="#">Techfest</a></li>
+                <li><a href="#">Competition</a></li>
+                <li><a href="#">Techexpo</a></li>
+                <li><a href="#">Showcase</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
         </div>
 
-        <div class="menu-icon" id="menu-icon">
-            <i class="ph ph-list"></i>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
         </div>
+    </section>
 
-        <ul id="menu-list" class="hidden">
-            <li><a href="">Techtalk</a></li>
-            <li><a href="">Competition</a></li>
-            <li><a href="">Techexpo</a></li>
-            <li><a href="">Showcase</a></li>
-        </ul>
-    </nav>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
