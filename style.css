@@ -104,4 +104,9 @@ body {
     }
 }
 
+@media (max-width:477px) {
+    #header{
+        padding: 10px 25px;
+    }
+}
 
