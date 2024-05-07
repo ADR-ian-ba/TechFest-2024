@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: Atmospheric;
   src: url(./assets/font/aAtmospheric.ttf);
@@ -76,6 +77,53 @@ button {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: hiragino-kaku-gothic-pron, sans-serif;
+}
+
+body {
+    background-image: url('Assets/Background.png');
+}
+
+#header a img{
+    height: 68px;
+    width: auto;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+    /* background-color: #3E4146; */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); */
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #E784BA;
+
 }
 
 .planet-thingy-img-decorator {
@@ -83,6 +131,7 @@ button {
   top: 0rem;
   animation: bobbing 3s ease-in-out infinite;
 }
+
 
 .line-thingy-img-decorator {
   right: 0;
@@ -376,3 +425,69 @@ nav .close {
     transform: translateY(-10px);
   }
 }/*# sourceMappingURL=style.css.map */
+=======
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:799px) {
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #3E4146;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #fff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+@media (max-width:477px) {
+    #header{
+        padding: 10px 25px;
+    }
+}
+
+
