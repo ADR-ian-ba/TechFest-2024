@@ -3,30 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techtalk - TECHFEST 2024</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tech Fest 2024</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="Assets/techfest logo.svg" alt="logo TECHFEST" >
-        </div>
+    <div class="decorator triangle-thingy-img-decorator">
+        <img src="./assets/image/thingy/Triangle Thingy.png" alt="">
+    </div>
 
-        <ul>
-            <li><a href="">TechTalk</a></li>
-            <li><a href="">Competition</a></li>
-            <li><a href="">Techexpo</a></li>
-            <li><a href="">Showcase</a></li>
-        </ul>
+    <div class="decorator line-thingy-img-decorator">
+        <img src="./assets/image/thingy/Line Thingy.png" alt="">
+    </div>
 
-        <div class="menu-toggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="nav">
+        <div class="logo-wrapper">
+            <img src="./assets/image/TechFest Logo.png" alt="">
         </div>
+        <div class="item-wrapper">
+            <ul>    
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>  
+                </li>                
+                <li>Techfest</li>
+                <li>Competition</li>
+                <li>TechExpo</li>
+                <li>Showcase</li>
+            </ul>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>          
     </nav>
 
-    <script src="script.js"></script>
+    <section class="hero-section">
+        <div class="decorator planet-thingy-img-decorator">
+            <img src="./assets/image/thingy/Planet Thingy.png" alt="">
+        </div>
+
+        <div class="hero-text">
+            <h3>Technology festival 2023</h3>
+            <h1>TechExpo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a tempora odio quibusdam. Quam facilis, harum totam debitis dolore illo necessitatibus rem quidem excepturi in.</p>
+        
+            <div class="cta-group">
+                <button class="cta-explore">Explore</button>
+                <button class="cta-register">Register</button>
+            </div>
+        
+        </div>
+    </section>
+    
+    <section class="about-section">
+        <div class="decorator jellyfish-thingy-img-decorator">
+            <img src="./assets/image/thingy/Jellyfish Thingy.png" alt="">
+        </div>
+
+        <div class="location">
+            <div class="place">
+                <div class="img-wrapper">
+                    <img src="./assets/Binus-Anggrek.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="timer">
+                <h1 class="time">Time & Place</h1>
+                <h1 class="time count-down">00 : 00 : 00 : 00</h1>
+                <p class="time">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo veniam sequi veritatis deleniti, aliquid voluptatibus suscipit, nisi ducimus neque possimus porro ad voluptates aut.</p>
+                <button class="time">Google Maps</button>
+            </div>
+        </div>
+
+        <div class="about-information">
+
+            <div class="description">
+                <h1>Description</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facilis repudiandae, at cum doloribus sunt molestias placeat unde rerum quibusdam beatae hic. A, libero sed.</p>
+            </div>
+
+            <div class="benefit">
+                <h1>Benefit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minima. Ut exercitationem eligendi mollitia reprehenderit aperiam dolorum? Sit esse reprehenderit suscipit iure debitis culpa itaque?</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
